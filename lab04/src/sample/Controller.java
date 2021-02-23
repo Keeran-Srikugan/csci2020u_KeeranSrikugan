@@ -23,10 +23,10 @@ public class Controller {
     private DatePicker DateField;
 
     public void handleSubmitButtonAction(ActionEvent actionEvent) {
-        System.out.println("Full Name: " + FullNameField.getText() );
-        System.out.println("Email: " + EmailField.getText() );
-        System.out.println("Phone Number: " + PhoneNumberField.getText() );
-        System.out.println("Date of Birth: " + DateField.getValue());
+        System.out.println(FullNameField.getText() );
+        System.out.println(EmailField.getText() );
+        System.out.println(PhoneNumberField.getText() );
+        System.out.println(DateField.getValue());
         actiontarget.setText("Successfully Registered.");
     }
 }
