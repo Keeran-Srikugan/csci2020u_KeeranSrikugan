@@ -19,19 +19,14 @@
         <columns>
             <TableColumn fx:id="SID" text = "SID">
             </TableColumn>
-
             <TableColumn fx:id="assignments" text = "Assignments">
             </TableColumn>
-
             <TableColumn fx:id="midterm" text = "Midterm">
             </TableColumn>
-
             <TableColumn fx:id="finalExam" text = "Final Exam">
             </TableColumn>
-
             <TableColumn fx:id="finalMark" text = "Final Mark">
             </TableColumn>
-
             <TableColumn fx:id="letterGrade" text = "Letter Grade">
             </TableColumn>
         </columns>

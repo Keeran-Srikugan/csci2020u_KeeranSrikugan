@@ -13,25 +13,20 @@
     <stylesheets>
         <URL value="@mystyle.css"/>
     </stylesheets>
-    
+
     <!-- This is where the table with the column labels are created -->
     <TableView fx:id="myTable" GridPane.columnIndex="0" GridPane.rowIndex="1">
         <columns>
             <TableColumn fx:id="SID" text = "SID">
             </TableColumn>
-
             <TableColumn fx:id="assignments" text = "Assignments">
             </TableColumn>
-
             <TableColumn fx:id="midterm" text = "Midterm">
             </TableColumn>
-
             <TableColumn fx:id="finalExam" text = "Final Exam">
             </TableColumn>
-
             <TableColumn fx:id="finalMark" text = "Final Mark">
             </TableColumn>
-
             <TableColumn fx:id="letterGrade" text = "Letter Grade">
             </TableColumn>
         </columns>

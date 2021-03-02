@@ -9,12 +9,12 @@ public class Controller {
     @FXML private TableView myTable;
 
     //Below these are the values that will be inputted into their respective columns
-    @FXML private TableColumn SID;
-    @FXML private TableColumn midterm;
-    @FXML private TableColumn assignments;
-    @FXML private TableColumn finalExam;
-    @FXML private TableColumn finalMark;
-    @FXML private TableColumn letterGrade;
+    @FXML private TableColumn<Object, Object> SID;
+    @FXML private TableColumn<Object, Object> midterm;
+    @FXML private TableColumn<Object, Object> assignments;
+    @FXML private TableColumn<Object, Object> finalExam;
+    @FXML private TableColumn<Object, Object> finalMark;
+    @FXML private TableColumn<Object, Object> letterGrade;
 
     public void initialize(){
 
