@@ -15,6 +15,7 @@
     </stylesheets>
 
     <!-- This is where the table with the column labels are created -->
+    <!-- Website used to help create chart(For future reference):https://docs.oracle.com/javase/8/javafx/fxml-tutorial/fxml_tutorial_intermediate.htm  -->
     <TableView fx:id="myTable" GridPane.columnIndex="0" GridPane.rowIndex="1">
         <columns>
             <TableColumn fx:id="SID" text = "SID">
