@@ -8,6 +8,12 @@
     <padding>
         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
     </padding>
+
+    <!-- This is where the css file is called to help style the table a little bit -->
+    <stylesheets>
+        <URL value="@mystyle.css"/>
+    </stylesheets>
+
     <!-- This is where the table with the column labels are created -->
     <TableView fx:id="myTable" GridPane.columnIndex="0" GridPane.rowIndex="1">
         <columns>
@@ -29,10 +35,5 @@
             <TableColumn fx:id="letterGrade" text = "Letter Grade">
             </TableColumn>
         </columns>
-
-        <!-- This is where the css file is called to help style the table a little bit -->
-        <stylesheets>
-            <URL value="@mystyle.css"/>
-        </stylesheets>
     </TableView>
 </GridPane>
