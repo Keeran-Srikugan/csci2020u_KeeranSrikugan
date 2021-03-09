@@ -38,11 +38,11 @@ public class Controller {
     public void initialize(){
         gc=canvas.getGraphicsContext2D();
         drawPie(1000,purchasesByAgeGroup,pieColours);
-        drawBar(avgHousingPricesByYear,avgCommercialPricesByYear,Color.RED,Color.BLUE,150, 150,350);
+        drawBar(avgHousingPricesByYear,avgCommercialPricesByYear,150, 150,350);
     }
 
 
-    public void drawBar(double [] avgHousing, double [] avgComm, Color color1,Color color2,int base,int x, int y){
+    public void drawBar(double [] avgHousing, double [] avgComm,int base,int x, int y){
         //We are going to start by getting the max and min values
         double max = 0.0;
         double min = 0.0;
@@ -83,7 +83,7 @@ public class Controller {
         double barSpacing = x/ length;
         double startingPoint = 150;
         double barLength;
-        gc.setFill(color1);
+        gc.setFill(Color.RED);
         for(int i= 0; i < length; i++){
             //The line below calculates the length of the bar before it is drawn
             barLength = (avgHousing[i]/max) * y;
@@ -95,7 +95,7 @@ public class Controller {
 
         //This is the bars for the average housing price
         startingPoint = 150 + barSpacing;
-        gc.setFill(color2);
+        gc.setFill(Color.BLUE);
         for(int i= 0; i < length2; i++){
             barLength = (avgComm[i]/max) * y;
             gc.fillRect(startingPoint - 100,(y-barLength) + 20, barSpacing,barLength + 20);
