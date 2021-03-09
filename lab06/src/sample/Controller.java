@@ -89,7 +89,7 @@ public class Controller {
             barLength = (avgHousing[i]/max) * y;
 
             //The code below fills the bar with the color chosen up above
-            gc.fillRect(startingPoint - 80,(y-barLength) + 200, barSpacing,barLength + 20);
+            gc.fillRect(startingPoint - 100,(y-barLength) + 20, barSpacing,barLength + 20);
             startingPoint = startingPoint +(barSpacing*2.5);
         }
 
@@ -98,7 +98,7 @@ public class Controller {
         gc.setFill(color2);
         for(int i= 0; i < length2; i++){
             barLength = (avgComm[i]/max) * y;
-            gc.fillRect(startingPoint - 80,(y-barLength) + 200, barSpacing,barLength + 20);
+            gc.fillRect(startingPoint - 100,(y-barLength) + 20, barSpacing,barLength + 20);
             startingPoint = startingPoint +(barSpacing*2.5);
         }
 
