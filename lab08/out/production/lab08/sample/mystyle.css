@@ -1,0 +1,17 @@
+/* This makes it so that the empty cells are filled with a yellow colour.*/
+.table-row-cell:empty{
+    -fx-background-color: lightyellow;
+}
+
+/* This makes it so that the border of the empty cells goes away so everything under is smooth.*/
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+/* This makes it so that the column names are a bigger font and red so they are easy and clear to see */
+.label{
+    -fx-text-fill: red;
+    -fx-font-size: 12px;
+}
+
+

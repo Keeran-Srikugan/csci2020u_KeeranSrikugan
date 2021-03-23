@@ -1,0 +1,10 @@
+<info>
+    <student id="100750417">
+        <name>Keeran Srikugan</name>
+        <email>keeran.srikugan@ontariotechu.net</email>
+    </student>
+    <software-description>
+        This is a program that shows either
+        my initials or an animation of ducks.
+    </software-description>
+</info>

@@ -1,0 +1,66 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import java.net.URL?>
+
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+
+    <!-- This is where the css file is called to help style the table a little bit -->
+    <stylesheets>
+        <URL value="@mystyle.css"/>
+    </stylesheets>
+
+    <!-- This is where the table with the column labels are created -->
+    <!-- Website used to help create chart(For future reference):https://docs.oracle.com/javase/8/javafx/fxml-tutorial/fxml_tutorial_intermediate.htm  -->
+    <TableView fx:id="myTable" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <columns>
+            <TableColumn fx:id="SID" text = "SID">
+            </TableColumn>
+            <TableColumn fx:id="assignments" text = "Assignments">
+            </TableColumn>
+            <TableColumn fx:id="midterm" text = "Midterm">
+            </TableColumn>
+            <TableColumn fx:id="finalExam" text = "Final Exam">
+            </TableColumn>
+            <TableColumn fx:id="finalMark" text = "Final Mark">
+            </TableColumn>
+            <TableColumn fx:id="letterGrade" text = "Letter Grade">
+            </TableColumn>
+        </columns>
+    </TableView>
+
+    <VBox GridPane.rowIndex="2" GridPane.columnIndex="0">
+        <HBox alignment="BOTTOM_CENTER" spacing="10">
+            <Label text="SID:"/>
+            <TextField fx:id="sid"/>
+            <Label text="Assignments:"/>
+            <TextField fx:id="assignment"/>
+        </HBox>
+    </VBox>
+    <VBox GridPane.rowIndex="3" GridPane.columnIndex="0">
+        <HBox alignment="BOTTOM_CENTER" spacing="15">
+            <Label text="Midterm:"/>
+            <TextField fx:id="midterms"/>
+            <Label text="Final Exam:"/>
+            <TextField fx:id="finalExams"/>
+        </HBox>
+        <Button text ="Add"
+                onAction="#handleAddButtonAction"/>
+    </VBox>
+</GridPane>
+
